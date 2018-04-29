@@ -72,7 +72,7 @@ public:
             // CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a284f63742032322c20323031373a20426974636f696e2070726963652061626f76652024362c303030)
             // CTxOut(empty)
 
-        const char* pszTimestamp = "Warren Buffet predicts Bitcoin collapse.";
+        const char* pszTimestamp = "North Korea nuclear test site to close in May";
         std::vector<CTxIn> vin;
         vin.resize(1);
         vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -158,8 +158,8 @@ public:
         pchMessageStart[3] = 129;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16);
         vAlertPubKey = ParseHex("04efa3a230591895a2a274a733989e10bd15f9cf7bfc26fcfc2d72d584378bd208c59f7809220154bd808b53ccbd422e864f359105f277a30026752fd404a0fc76");
-        nDefaultPort = 27170;
-        nRPCPort = 27171;
+        nDefaultPort = 27150;
+        nRPCPort = 27151;
         strDataDir = "testnet";
 
         hashGenesisBlock = genesis.GetHash();
